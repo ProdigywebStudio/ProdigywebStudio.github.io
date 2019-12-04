@@ -1,131 +1,483 @@
 <!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JuicePlus</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/download.png" type="image/x-icon"
-            />
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <body>
-        <!--nav-->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img
-                    src="images/logo_juice_plus.jpg" width="80px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<head>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"> <span class="nav_item">Features</span>
-                            <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span class="nav_item">Supplement
-                                Facts
-                            </span></a>
-                    </li>
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>JuicePlus</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"> <span class="nav_item">Contact</span></a>
-                </li>
-            </ul>
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-        </div>
-    </nav>
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-    <body>
-        <!--nav-->
+    <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+    <link rel="icon" href="images/download.png" type="image/x-icon">
 
+</head>
 
+<body id="top">
 
-        <section>
+    <!-- header 
+   ================================================== -->
+   <header id="header" class="row">   
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <center>
-                            <img src="images/Juice.jpg" width="95%">
+   		<div class="header-logo">
+	     <img src  = "images/logo_juice_plus.jpg" width="85px" class="juice">
+	    </div>
 
+	   	<nav id="header-nav-wrap">
+			<ul class="header-main-nav">
+				<li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+				<li><a class="smoothscroll"  href="#pricing" title="pricing">Pricing</a></li>
+				<li><a class="smoothscroll"  href="#testimonials" title="testimonials">Testimonials</a></li>
+			
+			</ul>
 
-                        </center>
+            
+		</nav>
+
+		<a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
+   	
+   </header> <!-- /header -->
 
 
-                    </div>
-                    <div class="col-lg-6">
+   <!-- home
+   ================================================== -->
+   <section id="home" data-parallax="scroll"   data-natural-width=3000 data-natural-height=2000>
 
-                        <h5>JUICE PLUS+®
-                            PREMIUM CAPSULES</h5>
-                        <p>Juice Plus+ capsule contains 30 kinds of fruits,
-                            vegetables and berries. That gives you all the
-                            phytonutrients, vitamins
-                            and minerals you need to manage every day
-                            successfully and feel comfortable in your own
-                            skin.</p>
-                        <center>
+        <div class="overlay"></div>
+        <div class="home-content">        
 
-                            <button>Order Now</button>
-                        </center>
+            <div class="row contents">                     
+                <div class="home-content-left">
 
+                    <h3 data-aos="fade-up">JUICE PLUS+® PREMIUM CAPSULES</h3>
 
+                    <h1 data-aos="fade-up">
+                        30 fruits,vegetables and berries <br>
+                       
+                        to spice up your life
+                    </h1>
 
+                    <div class="buttons" data-aos="fade-up">
+                        <a href="#pricing" class="smoothscroll button stroke">
+                            <span class="icon-circle-down" aria-hidden="true"></span>
+                            Order now
+                        </a>
+                      
+                    </div>                                         
 
+                </div>
 
-                    </div>
-
+                <div class="home-image-right">
+                    <img src="images/juice.png"  
+                        srcset="images/juice.png 1x, images/juice.png 2x"  
+                        data-aos="fade-up">
                 </div>
             </div>
 
+        </div> <!-- end home-content -->
+
+        <ul class="home-social-list">
+            <li>
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </li>
+        </ul>
+        <!-- end home-social-list -->
+
+        <div class="home-scrolldown">
+            <a href="#about" class="scroll-icon smoothscroll">
+                <span>Scroll Down</span>
+                <i class="icon-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    </section> <!-- end home -->  
 
 
-        </section>
+    <!-- about
+    ================================================== -->
+    <section id="about">
+
+        <div class="row about-intro">
+
+            <div class="col-four">
+                <h1 class="intro-header" data-aos="fade-up">About JUICE PLUS+® PREMIUM CAPSULES</h1>
+            </div>
+            <div class="col-eight">
+                <p class="lead" data-aos="fade-up">
+                    Juice Plus+ capsule contains 30 kinds of fruits, vegetables and berries. That gives you all the phytonutrients, vitamins
+                    and minerals you need to manage every day successfully and feel comfortable in your own skin.
+                </p>
+            </div>                       
+            
+        </div>
+
+        <div class="row about-features">
+
+            <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+
+                <div class="bgrid feature" data-aos="fade-up">	
+
+                    <span class="icon"><i class="icon-window"></i></span>            
+
+                    <div class="service-content">	
+
+                        <h3>The Power Trio</h3>
+
+                        <p>juice PLUS+ Premium capsules contain a wide range of natural secondary metabolites. Its nutritional ingredients are
+                        derived from 30 different kinds of fruits, vegetables and berries. Juice PLUS+ Premium: Fruits, vegetables and berries
+                        are harvested when they reach perfect ripeness, and then carefully treated using our very own patented process. For a
+                        maximum intake of nutritional ingredients - every day.
+                        </p>
+                        
+                    </div> 	         	 
+
+                    </div> <!-- /bgrid -->
+
+                    <div class="bgrid feature" data-aos="fade-up">	
+
+                        <span class="icon"><i class="icon-image"></i></span>                          
+
+                    <div class="service-content">	
+                        <h3>Naturalness</h3>  
+
+                        <p>Naturally colourful - fruits, vegetables and berries make up the nutrient-giving ingredients of Juice PLUS+ .
+                        Naturally pure - guaranteed through constant laboratory monitoring by the SGS INSTITUT FRESENIUS.
+
+                        </p>
+
+                        
+                    </div>	                          
+
+                </div> <!-- /bgrid -->
+
+                <div class="bgrid feature" data-aos="fade-up">
+
+                    <span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+                    <div class="service-content">
+                        <h3>Recommendations for use</h3>
+
+                        <p>Take 2 fruit capsules, 2 vegetable capsules and 2 selected berry capsules every day, preferably at mealtimes, and drink
+                        plenty of water.
+                        </p> 
+                            
+                    </div> 	            	               
+
+                </div> <!-- /bgrid -->
+
+                   
+
+              
+ 
+
+            </div> <!-- end features-list -->
+
+        </div> <!-- end about-features -->
+
+     
+
+        </div> <!-- end about-how -->
+
+        <div class="row about-bottom-image">
+<center>
+
+    <img src="images/juice.png" width="60%" alt="App Screenshots" data-aos="fade-up">
+</center>
 
 
+         
 
-        <section>
-            <div class="container wrapper">
-                <img src="images/Juice.jpg" width="25%" height="200px">
+        </div>  <!-- end about-bottom-image -->       
+        
+    </section> <!-- end about -->  
+   
 
-                <p>100</p>
+    <!-- pricing
+    ================================================== -->
+    <section id="pricing">
+        <div class="row pricing-content">
 
+            <div class="col-four pricing-intro">
+                <h1 class="intro-header" data-aos="fade-up">Our Pricing Options</h1>
 
-
+                <p data-aos="fade-up">Each delivery consists of
+                2 bottles of Juice PLUS+ selected vegetables
+                2 bottles of Juice PLUS+ selected fruits
+                2 bottles of Juice PLUS+ selected berries
+                1 bottle contains 120 capsules.
+                
+                *For your convenience, these items will automatically re-ship in 4 months time.
+                </p>
             </div>
 
+            <div class="col-eight pricing-table">
+                <div class="row">
 
-        </section>
+                    <div class="col-six plan-wrap">
+                        <div class="plan-block" data-aos="fade-up"> 
+
+                            <div class="plan-top-part">
+                                <h3 class="plan-block-title">Monthly Plan</h3>
+                                <p class="plan-block-price"><sup>€ </sup> 73.50 </p>
+                                <p class="plan-block-per">Per Month</p>
+                            </div>
+
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span></span> Monthly (4x)</li>
+                                    
+                                </ul>
+
+                                <a class="button button-primary large" href="" style="background-color: orange; border:orange; color:black">Buy</a>
+                            </div>  
+                     
+                        </div>
+                    </div> <!-- end plan-wrap -->
+
+                    <div class="col-six plan-wrap">
+                        <div class="plan-block primary" data-aos="fade-up">
+
+                            <div class="plan-top-part">
+                                <h3 class="plan-block-title">Full payment</h3>
+                                <p class="plan-block-price"><sup>€</sup>286</p>
+                                <p class="plan-block-per">4 Months</p>
+                            </div>
+
+                            <div class="plan-bottom-part">
+                                <ul class="plan-block-features">
+                                    <li><span></span> four boxes recieved</li>
+                                    
+                                </ul>
+
+                                <a class="button button-primary large" href="">Buy</a>
+                            </div>
+
+                        </div>
+                    </div> <!-- end plan-wrap -->
+
+                </div>               
+            </div> <!-- end pricing-table -->
+
+        </div> <!-- end pricing-content -->
+    </section> <!-- end pricing -->
 
 
+    <!-- Testimonials Section
+    ================================================== -->
+    <section id="testimonials">
+
+        <div class="row">
+            <div class="col-twelve">
+                <h1 class="intro-header" data-aos="fade-up">What They Say About JuicePlus.</h1>
+            </div>   		
+        </div>   	
+
+        <div class="row owl-wrap">
+
+            <div id="testimonial-slider"  data-aos="fade-up">
+
+                <div class="slides owl-carousel">
+
+                    <div>
+                        <p>
+                       Juice plus  has changed my life. i am stronger, healthier and better all thanks to juice plus
+                        </p> 
+
+                        <div class="testimonial-author">
+                                <img src="images/avatars/user-02.jpg" alt="Author image">
+                                <div class="author-info">
+                                    Micheal scofield
+                                    <span class="position">CEO, fizer.</span>
+                                </div>
+                        </div>                 
+                    </div> 
+
+                    <div>
+                        <p>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                        nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.    
+                        </p>
+
+                        <div class="testimonial-author">
+                                <img src="images/avatars/user-03.jpg" alt="Author image">
+                                <div class="author-info">
+                                    John Doe
+                                    <span>CEO, ABC Corp.</span>
+                                </div>
+                        </div>                                         
+                    </div> 
+
+                </div> <!-- end slides -->
+
+            </div> <!-- end testimonial-slider -->         
+            
+        </div> <!-- end flex-container -->
+
+    </section> <!-- end testimonials -->
+    
+
+  
+
+    <!-- footer
+    ================================================== 
+    
+
+        <div class="footer-main">
+            <div class="row">  
+
+                <div class="col-three md-1-3 tab-full footer-info">            
+
+                    <div class="footer-logo"></div>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
+                    </p>
+
+                    <ul class="footer-social-list">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    
+                    
+                </div> <!-- end footer-info -
+
+                <div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
+
+                    <h4>Contact</h4>
+
+                    <p>
+                    1600 Amphitheatre Parkway<br>
+                    Mountain View, CA <br>
+                    94043 US<br>		        
+                    </p>
+
+                    <p>
+                    someone@dazzlesite.com <br>
+                    Phone: (+63) 555 1212 <br>
+                    Fax: (+63) 555 0100    
+                    </p>                    
+
+                </div> <!-- end footer-contact --
+
+                <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+
+                    <h4>Site Links</h4>
+
+                    <ul class="list-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>	      		
+                            
+                </div> <!-- end footer-site-links --
+
+                <div class="col-four md-1-2 tab-full footer-subscribe">
+
+                    <h4>Our Newsletter</h4>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    <div class="subscribe-form">
+                
+                        <form id="mc-form" class="group" novalidate="true">
+
+                            <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required=""> 
+                
+                            <input type="submit" name="subscribe" value="Send">
+                
+                            <label for="mc-email" class="subscribe-message"></label>
+                
+                        </form>
+
+                    </div>	      		
+                            
+                </div> <!-- end footer-subscribe -->         
+
+            </div> <!-- /row -->
+        </div> <!-- end footer-main --
 
 
+      <div class="footer-bottom">
 
+      	<div class="row">
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    </body>
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright Dazzle 2018.</span> 
+		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> <!-- end footer-bottom -->     	
+
+      </div>
+1 
+    </footer>
+
+    <div id="preloader"> 
+    	<div id="loader"></div>
+    </div>  
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>
