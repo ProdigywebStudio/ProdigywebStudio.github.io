@@ -1,0 +1,13 @@
+.navbar {
+  background-color: white;
+  border-bottom: orange 0.5px solid;
+}
+.nav_item {
+  color: orange;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.wrapper {
+  background-color: orange;
+}
